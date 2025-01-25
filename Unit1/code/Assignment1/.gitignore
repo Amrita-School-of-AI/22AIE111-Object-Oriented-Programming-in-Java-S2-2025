@@ -4,9 +4,6 @@
 # Ignore Gradle build output directory
 build
 
-# Gradle build directory
-/build/
-
 # Gradle Wrapper files
 /.gradle/
 /gradle/wrapper/gradle-wrapper.jar
@@ -32,4 +29,3 @@ Thumbs.db
 
 # Temporary files
 *.tmp
-

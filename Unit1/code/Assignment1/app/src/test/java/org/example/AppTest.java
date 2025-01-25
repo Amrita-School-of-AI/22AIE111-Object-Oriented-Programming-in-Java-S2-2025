@@ -3,22 +3,14 @@
  */
 package org.example;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-
-package tests.java;
-
-import main.java.HelloWorld;
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
-public class HelloWorldTest {
-
+class AppTest {
     @Test
     public void testSayHello() {
-        HelloWorld hw = new HelloWorld();
+        App app = new App();
         String expected = "Hello World!";
-        String actual = hw.sayHello();
+        String actual = app.sayHello();
         assertEquals(expected, actual, "The sayHello method should return 'Hello World!'");
-    }
-}
+    }}

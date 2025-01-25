@@ -1,6 +1,7 @@
-package main.java;
+package org.example;
 
-public class HelloWorld {
+public class App {
+
     /**
      * Returns the string "Hello World!".
      *
@@ -12,7 +13,7 @@ public class HelloWorld {
     }
 
     public static void main(String[] args) {
-        HelloWorld hw = new HelloWorld();
-        System.out.println(hw.sayHello());
+        App app = new App();
+        System.out.println(app.sayHello());
     }
 }
