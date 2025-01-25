@@ -40,6 +40,13 @@ Additionally, you will find:
    - If you prefer using **VS Code**, refer to the files in the `setup/vscode` directory.  
    - If you prefer using **IntelliJ IDEA**, refer to the files in the `setup/idea` directory.
 
+5. **Prerequisites**
+   Before you begin, ensure that the following tools are installed on your system:
+    - Java Development Kit (JDK): Version 11 or higher.
+    - Git: For version control.
+    - Gradle: Although we'll use the Gradle Wrapper, having Gradle installed can be helpful.
+    - Text Editor or IDE: Such as VS Code, IntelliJ IDEA, or Eclipse.
+
 ---
 
 ## Setting up Java on Linux (Ubuntu)
