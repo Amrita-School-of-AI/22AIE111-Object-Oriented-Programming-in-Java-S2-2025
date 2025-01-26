@@ -121,42 +121,52 @@ Display the size and default values (for instance fields) of Java’s primitive 
 ## Assignment 4: Variables
 
 ### Objective
-Use variables to store dimensions of a rectangle and compute area and perimeter.
+Demonstrate the usage of multiple operator categories in Java:
+- **Arithmetic operators** (`+`, `-`, `*`, `/`, `%`)
+- **Relational operators** (`>`, `<`, `==`, `!=`, `>=`, `<=`)
+- **Logical operators** (`&&`, `||`, `!`)
+- **Bitwise operators** (`&`, `|`, `^`, `~`, `<<`, `>>`)
 
 ### Requirements
-1. **Declare** instance variables for `length` and `width`.
-2. **Compute** the area (`length * width`) and perimeter (`2 * (length + width)`).
+1. **Create individual methods** for each operator. For instance:
+   - `add(int a, int b)`, `subtract(int a, int b)`, etc.
+   - `greaterThan(int a, int b)`, `equalTo(int a, int b)`, etc.
+   - `logicalAnd(boolean x, boolean y)`, etc.
+   - `bitwiseAnd(int a, int b)`, etc.
+2. **Return** the correct result from each method.
+3. **Write tests** that validate each operator’s actual output.
 
 ### Suggested Classes
-- `App`, containing:
-  - A constructor accepting `length` and `width`.
-  - `getArea()` and `getPerimeter()` methods.
-
-### Tests
-- Use a test that creates a rectangle (e.g., `new App(5, 3)`) and verifies:
-  - Area is `15`.
-  - Perimeter is `16`.
+- `App`  
+  Contains one function per operator. In the `main` method, demonstrate usage by calling these methods with sample inputs.
+- `AppTest`  
+  Contains assertions that check your method outputs (e.g., `add(10, 3)` should be `13`).
 
 ---
 
-## Assignment 5: Operators
+## Assignment 5: Control Statements
 
 ### Objective
-Demonstrate various operators in Java:
-- Arithmetic (`+`, `-`, `*`, `/`, `%`)
-- Relational (`>`, `<`, `==`, `!=`)
-- Logical (`&&`, `||`, `!`)
-- Bitwise (`&`, `|`, `^`, `~`, `<<`, `>>`)
+Show proficiency in **if-else**, **switch-case**, **for**, **while**, and **do-while** statements.
 
 ### Requirements
-1. **Compute** and **return** a string that showcases the results of applying these operators to sample values.
+Create methods for each control statement pattern:
+1. **`checkSign(int number)`**  
+   Uses `if-else` to return `"Positive"`, `"Negative"`, or `"Zero"`.
+2. **`getDayName(int day)`**  
+   Uses a `switch-case` to return a weekday name (1→`Monday`, ..., 7→`Sunday`) or `"Invalid day"`.
+3. **`calculateFactorial(int n)`**  
+   Uses a `for` loop to compute the factorial of `n`.
+4. **`isPrime(int number)`**  
+   Uses a `while` (or `for`) loop to check if `number` is prime.
+5. **`sumUntil(int limit)`**  
+   Uses a `do-while` loop to sum from 1 up to `limit`.
 
 ### Suggested Classes
-- `App`, containing:
-  - `demonstrateOperators()` method that returns a string with the results of each operator type.
-
-### Tests
-- Confirm that the result string includes the words `"Arithmetic"`, `"Relational"`, `"Logical"`, and `"Bitwise"`.
+- `App`  
+  Contains methods for each control statement. Demonstrate these in `main` with sample inputs.
+- `AppTest`  
+  Tests each method’s logic, ensuring correct behavior for various inputs.
 
 ---
 
