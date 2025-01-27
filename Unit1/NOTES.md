@@ -316,7 +316,6 @@ This creates archives (in `build/distributions/`) containing:
 
 You can choose the method that best fits your project’s size, complexity, and distribution needs.
 
-```markdown
 # Java Fundamentals: Comprehensive Notes
 
 These notes cover the core concepts of Java that form the basis for writing simple to moderately complex programs. By studying these topics, you’ll gain an understanding of Java’s syntax, data types, variables, operators, control statements, functions, and how references work.
@@ -664,4 +663,3 @@ These fundamental topics provide the groundwork for further Java exploration. Un
 4. Utilizing **control statements** (`if-else`, `switch-case`, loops) to direct program flow.
 5. Differentiating between **value** and **reference** semantics in method calls.
 6. Knowing how **references** work under the hood, including the implications for `==` vs `.equals()`.
-```
