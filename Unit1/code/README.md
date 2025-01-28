@@ -171,17 +171,23 @@ Demonstrate the usage of multiple operator categories in Java:
 Show proficiency in **if-else**, **switch-case**, **for**, **while**, and **do-while** statements.
 
 ### Requirements
-Create methods for each control statement pattern:
+Create several methods, each demonstrating a different control statement:
 1. **`checkSign(int number)`**  
-   Uses `if-else` to return `"Positive"`, `"Negative"`, or `"Zero"`.
+   - Uses **if-else** to determine if a number is positive, negative, or zero.
 2. **`getDayName(int day)`**  
-   Uses a `switch-case` to return a weekday name (1→`Monday`, ..., 7→`Sunday`) or `"Invalid day"`.
+   - Uses a **switch-case** statement to return a weekday name (e.g., `1 -> "Monday"`, `2 -> "Tuesday"`, ...).
+   - Return `"Invalid day"` if the integer is outside the range 1-7.
 3. **`calculateFactorial(int n)`**  
-   Uses a `for` loop to compute the factorial of `n`.
+   - Uses a **for loop** to calculate and return the factorial of `n`.
+   - Assume `n >= 0`. (Factorial of 0 is 1.)
 4. **`isPrime(int number)`**  
-   Uses a `while` (or `for`) loop to check if `number` is prime.
+   - Uses a **while** loop (or for loop) to check if `number` is prime.
+   - Return `true` if prime, otherwise `false`.
 5. **`sumUntil(int limit)`**  
-   Uses a `do-while` loop to sum from 1 up to `limit`.
+   - Uses a **do-while** loop to sum consecutive integers starting from 1 up to `limit`, returning the total.
+   - Assume `limit >= 1`.
+
+In the `main` method, demonstrate each method with sample inputs.
 
 ### Suggested Classes
 - `App`  
