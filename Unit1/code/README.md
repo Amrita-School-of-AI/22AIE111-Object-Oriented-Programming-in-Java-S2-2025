@@ -121,6 +121,27 @@ Display the size and default values (for instance fields) of Java’s primitive 
 ## Assignment 4: Variables
 
 ### Objective
+Use variables to store dimensions of a rectangle and compute area and perimeter.
+
+### Requirements
+1. **Declare** instance variables for `length` and `width`.
+2. **Compute** the area (`length * width`) and perimeter (`2 * (length + width)`).
+
+### Suggested Classes
+- `App`, containing:
+  - A constructor accepting `length` and `width`.
+  - `getArea()` and `getPerimeter()` methods.
+
+### Tests
+- Use a test that creates a rectangle (e.g., `new App(5, 3)`) and verifies:
+  - Area is `15`.
+  - Perimeter is `16`.
+
+---
+
+## Assignment 5: Variables
+
+### Objective
 Demonstrate the usage of multiple operator categories in Java:
 - **Arithmetic operators** (`+`, `-`, `*`, `/`, `%`)
 - **Relational operators** (`>`, `<`, `==`, `!=`, `>=`, `<=`)
@@ -144,7 +165,7 @@ Demonstrate the usage of multiple operator categories in Java:
 
 ---
 
-## Assignment 5: Control Statements
+## Assignment 6: Control Statements
 
 ### Objective
 Show proficiency in **if-else**, **switch-case**, **for**, **while**, and **do-while** statements.
@@ -167,25 +188,6 @@ Create methods for each control statement pattern:
   Contains methods for each control statement. Demonstrate these in `main` with sample inputs.
 - `AppTest`  
   Tests each method’s logic, ensuring correct behavior for various inputs.
-
----
-
-## Assignment 6: Control Statements
-
-### Objective
-Use conditional statements and loops to determine if a given integer is prime.
-
-### Requirements
-1. **Read** an integer from the user.
-2. **Check** if it is prime using loops and `if-else`.
-3. **Print** whether it is prime or not.
-
-### Suggested Classes
-- `App`, containing:
-  - `isPrime(int number)` method returning `true` if `number` is prime.
-
-### Tests
-- Ensure that calling `isPrime(7)` returns `true` and `isPrime(8)` returns `false`.
 
 ---
 
