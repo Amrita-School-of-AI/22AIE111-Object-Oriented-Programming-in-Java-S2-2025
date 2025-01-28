@@ -65,8 +65,17 @@ Although the **source code** is the same in all scenarios, you’ll gain experie
 1. **Initialize a Gradle Project**  
    From a new directory, run:
    ```bash
+   mkdir learning-java-gradle 
+   cd learning-java-gradle
    gradle init --type java-application
    ```
+   select options:
+
+    - target java version: 21
+    - application structure: single application project
+    - build scipt DSL: Kotlin
+    - test framework: JUnit Jupiter
+
    or manually create the necessary `build.gradle`, `settings.gradle`, and `App.java`.
 2. **Update the Main Class**  
    By default, Gradle might generate a class `App.java` in `src/main/java`:
@@ -86,18 +95,24 @@ Although the **source code** is the same in all scenarios, you’ll gain experie
 
 1. **Install Extensions**  
    - [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)  
-2. **Create a Folder**  
-   In VSCode, choose **File → Open Folder** and select or create a new folder, e.g. `learning-java-vscode`.
-3. **Create the Java File**  
-   Create `LearningJava.java`:
+2. **Open the Assignment9 Folder**  
+   In VSCode, choose **File → Open Folder** and select `Assignment9/` folder.
+
+3. **Create a project with Java Plugin**
+    - Open commands prompt with `Ctrl+Shift+P`
+    - Type: Java: Create Java Project... and press `Enter`
+    - Select `No build tools` option
+    - Select the present directory (`Assignment9`)
+    - Give a name for the Java Project `learning-java-vscode`
+4. **Edit the Java File (App.java) in src**  
    ```java
-   public class LearningJava {
+   public class App {
        public static void main(String[] args) {
            System.out.println("Learning Java is fun!");
        }
    }
    ```
-4. **Run**  
+5. **Run**  
    - Hover over the main method or the class, and click the **Run** or **Debug** link.  
    - Alternatively, open the Command Palette (`Ctrl + Shift + P`), select **Java: Run**.
 
@@ -105,26 +120,49 @@ Although the **source code** is the same in all scenarios, you’ll gain experie
 
 1. **Install Gradle for Java Extension**  
    If you prefer a Gradle-based workflow within VSCode, install the [Gradle extension](https://marketplace.visualstudio.com/items?itemName=richardwillis.vscode-gradle).
-2. **Initialize a Gradle Project**  
-   Similar to step #2 above, but do it within the VSCode terminal or with the Gradle extension’s project creation feature.
-3. **Edit `build.gradle`**  
-   Ensure the `mainClassName` or `application` plugin points to your main class:
-   ```groovy
-   plugins {
-       id 'java'
-       id 'application'
-   }
-   application {
-       mainClass = 'org.example.LearningJava'
+1. **Create a new directory within Assignment9**  
+   From `Assignment9` directory, run:
+   ```bash
+   mkdir learning-java-vscode-gradle 
+   ```
+3. **Initialize a Gradle Project with Gradle Plugin**
+    - Open commands prompt with `Ctrl+Shift+P`
+    - Type: Gradle: Create a Gradle Java Project... and press `Enter`
+    - Select the present directory (`learning-java-vscode-gradle`)
+    - Select `Kotlin` for DSL
+    - Give a name for the Java Project `LearningJava`
+4. 
+   Create a file named `LearningJava.java`:
+   By default, Gradle plugin will generate a class `App.java` in `app/src/main/java/learning/java/vscode/gradle`, you should remove this file.
+   Also remove the `test/` folder
+   Then add the file `LearningJava.java`
+   ```java
+   public class LearningJava {
+       public static void main(String[] args) {
+           System.out.println("Learning Java is fun!");
+       }
    }
    ```
-4. **Run**  
-   Use the **Gradle Tasks** panel in VSCode to run `build` or `run`.
+5. **Edit `build.gradle`**  
+   Ensure the `mainClassName` or `application` plugin points to your main class:
+   ```kotlin
+    application {
+        // Define the main class for the application.
+        mainClass = "learning.java.vscode.gradle.LearningJava"
+    }
+   ```
+6. **Run**  
+    - Use `Ctrl+Shirt+P` to open command prompt and then type: `Gradle: Run a gradle build`
+    - type the `run` command
+    Use the **Gradle Tasks** panel in VSCode to run `build` or `run`.
 
 ### 5. IntelliJ IDEA (Standard Java Project)
 
 1. **Create a New Project**  
    - In IntelliJ, select **New Project** → **Java** → pick your desired JDK.
+   - Select the path to folder `Assignment9`
+   - Give the name of the porject as `learning-java-idea`
+   - Pick IntelliJ as build tool
 2. **Project Structure**  
    IntelliJ will create a standard folder structure. By default:
    - `src/` → place your `LearningJava.java`.
@@ -144,10 +182,13 @@ Although the **source code** is the same in all scenarios, you’ll gain experie
 
 1. **New Project → Gradle**  
    - In the **New Project** wizard, choose **Gradle** as the build system.  
+   - Select the path to folder `Assignment9`
+   - Give the name of the porject as `learning-java-idea-gradle`
    - Select your JDK.
 2. **Project Structure**  
    - IntelliJ auto-generates `build.gradle`, `settings.gradle`, and the appropriate folders.
 3. **Add the Main Class** in `src/main/java`:
+    Rename the `Main.java` to `LearningJava.java` and update the content as below:
    ```java
    package org.example;
 
