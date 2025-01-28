@@ -11,6 +11,7 @@ This repository contains multiple Java assignments designed to help you learn fu
 6. [Assignment 6: Control Statements](#assignment-6-control-statements)
 7. [Assignment 7: Functions—Value Types and Reference Types](#assignment-7-functionsvalue-types-and-reference-types)
 8. [Assignment 8: The Concept of References](#assignment-8-the-concept-of-references)
+9. [Assignment 9: Creating Java Projects in Different Ways (#assignment-9-creating-java-projects-in-different-ways)
 
 ## General Submission Guidelines
 
@@ -236,6 +237,12 @@ Illustrate the difference between modifying a primitive vs. modifying an object 
 ### Tests
 - Verify that the integer remains unchanged outside `changePrimitive(...)`.
 - Verify that `Person.name` is changed after passing the object to `changeReference(...)`.
+
+---
+
+## Assignment 9: Creating Java Projects in Different Ways 
+
+Please refer to the README.md in the `Assignment9/` folder
 
 ---
 
