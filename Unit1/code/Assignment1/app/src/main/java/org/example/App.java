@@ -9,7 +9,7 @@ public class App {
      */
     public String sayHello() {
         // TODO: Implement this method to return "Hello World!"
-        return "";
+        return "Hello World!";
     }
 
     public static void main(String[] args) {
